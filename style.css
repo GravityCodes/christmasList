@@ -1,0 +1,475 @@
+/* --- CSS RESET --- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background: linear-gradient();
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- CSS RESET END --- */
+
+body {
+    background-color: bisque;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  border: 20px solid green;
+  border-image: url("/images/snowflake.png") 1000 30 / 20px round space;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+main > p {
+  text-align: center;
+  margin: 20px;
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: light;
+}
+
+
+.cheap-container,
+.normal-container,
+.expensive-container {
+  padding: 70px 20px;
+ }
+
+h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  background-image: url("/images/snowflakes.png");
+  background-repeat: repeat;
+  background-size: 300px;
+  border: 20px double white;
+}
+
+.cheap-container > h2 {
+  background-color: rgb(205, 84, 84);
+}
+
+.normal-container > h2 {
+  background-color: rgb(42, 113, 190);
+}
+
+.cheap,
+.normal,
+.expensive {
+    border: 2px solid rgb(219, 195, 166);
+}
+
+.cheap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  background-color: rgb(205, 84, 84);
+  background-image: url("/images/snowflakes.png");
+  background-repeat: repeat;
+  background-size: 300px;
+  border-radius: 10px;
+  padding: 40px;
+  gap: 20px;
+  justify-items: center;
+}
+
+.normal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  background-color: rgb(42, 113, 190);
+  background-image: url("/images/snowflakes.png");
+  background-repeat: repeat;
+  background-size: 300px;
+  border-radius: 10px;
+  padding: 40px;
+  justify-items: center;
+  gap: 20px;
+}
+
+.cheap-product {
+  display: grid;
+  width: 300px;
+  height: 350px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  background-image: url("/images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
+  background-size: cover;
+  border-radius: 20px;  
+  padding: 20px; 
+  border: 2px solid rgb(120, 176, 178);
+}
+
+.cheap-img {
+  grid-row: 2;
+  grid-column: 1;
+  border: 2px solid rgba(120, 176, 178, 0.495);
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+.cheap-img img {
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.cheap .title {
+  color: rgb(205, 84, 84);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.cheap .buy-btn {
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  background-color: rgb(205, 84, 84);
+}
+
+.cheap-price {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  text-align: center;
+  align-self:flex-end;
+  background-image: url("/images/snowflakes_white.png");
+  background-repeat: repeat;
+  background-size: 200px;
+  background-color: rgb(205, 84, 84);
+  border-radius: 999px;
+  padding: 50px 1px;
+  position: relative;
+}
+
+.cheap-price::after {
+  content: "";
+  width: 30px;
+  height: 35px;
+  background-color: rgb(238, 188, 62);
+  position: absolute;
+  top: -25px;
+  right: 55px;
+  border-bottom: 4px solid rgb(163, 64, 64);
+  border-top: 1px solid gold;
+}
+
+.normal-product {
+  display: grid;
+  width: 300px;
+  height: 350px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  background-image: url("/images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
+  background-size: cover;
+  border-radius: 20px;  
+  padding: 20px; 
+  border: 2px solid rgb(120, 176, 178);
+}
+
+.normal-img {
+  grid-row: 2;
+  grid-column: 1;
+  border: 2px solid rgba(120, 176, 178, 0.541);
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+.normal-img img {
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.normal-product .title {
+  color: rgb(42, 113, 190);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.normal .buy-btn {
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  background-color: rgb(42, 113, 190);
+}
+
+.normal-price {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  text-align: center;
+  align-self:flex-end;
+  background-image: url("/images/snowflakes_white.png");
+  background-repeat: repeat;
+  background-size: 200px;
+  background-color: rgb(42, 113, 190);
+  border-radius: 999px;
+  padding: 50px 1px;
+  position: relative;
+}
+
+.normal-price::after {
+  content: "";
+  width: 30px;
+  height: 35px;
+  background-color: rgb(238, 188, 62);
+  position: absolute;
+  top: -25px;
+  right: 55px;
+  border-bottom: 4px solid rgb(29, 80, 135);
+  border-top: 1px solid gold;
+}
+
+.expensive-container h2 {
+  background-color: gold;
+  color: black;
+  border-color: black;
+}
+
+.expensive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  background-color: gold;
+  background-image: url("/images/snowflakes.png");
+  background-repeat: repeat;
+  background-size: 300px;
+  border-radius: 10px;
+  padding: 40px;
+  justify-items: center;
+  gap: 20px;
+}
+
+.expensive-product {
+  display: grid;
+  width: 300px;
+  height: 350px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  background-image: url("/images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
+  background-size: cover;
+  border-radius: 20px;  
+  padding: 20px; 
+  border: 2px solid rgb(120, 176, 178);
+}
+
+.expensive-img {
+  grid-row: 2;
+  grid-column: 1;
+  border: 2px solid rgba(120, 176, 178, 0.541);
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+.expensive-img img {
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.expensive .title {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.expensive .buy-btn {
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  background-color: gold;
+}
+
+.expensive-price {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  text-align: center;
+  align-self:flex-end;
+  background-image: url("/images/snowflakes_white.png");
+  background-repeat: repeat;
+  background-size: 200px;
+  background-color: black;
+  border-radius: 999px;
+  padding: 50px 1px;
+  position: relative;
+}
+
+.expensive-price::after {
+  content: "";
+  width: 30px;
+  height: 35px;
+  background-color: rgb(238, 188, 62);
+  position: absolute;
+  top: -25px;
+  right: 55px;
+  border-bottom: 4px solid rgb(56, 56, 56);
+  border-top: 1px solid gold;
+}
+
+.expensive-price.gaming-price {
+  font-size: 1.7rem;
+    padding: 60px 1px;
+}
+
+footer{
+  background-color: rgb(205, 84, 84);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid rgb(135, 54, 54);
+  position: relative;
+}
+
+footer::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;        /* just in case */
+  width: 100%;      /* or whatever width you want */
+  height: 240px;     /* set the height of the snow layer */
+  background-image: url("/images/snow_ground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none; 
+}
+
+@media screen and (max-width: 485px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .cheap-container,
+  .normal-container,
+  .expensive-container{
+    padding: 40px 5px;
+  }
+  .cheap,
+  .normal,
+  .expensive{
+    padding: 40px 5px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .cheap-product,
+  .normal-product,
+  .expensive-product{
+    width: 250px;
+  }
+
+  .cheap .title,
+  .normal .title,
+  .expensive .title {
+    font-size: 1.5rem;
+  }
+  .cheap-img,
+  .expensive-img,
+  .normal-img {
+    height: 120px;
+    width: 120px;
+  }
+  .cheap-price,
+  .expensive-price,
+  .normal-price {
+    font-size: 2rem;
+    padding: 45px 1px;
+  }
+  .cheap-price::after,
+  .normal-price::after,
+  .expensive-price::after{
+    right: 47px;
+  }
+
+  .expensive-price.gaming-price {
+    font-size: 1.6rem;
+    padding: 50px 1px;
+  }
+  footer::before{
+    height: 140px; 
+  }   
+}
