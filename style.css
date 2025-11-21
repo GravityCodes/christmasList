@@ -54,7 +54,7 @@ nav {
   text-align: center;
   padding: 10px;
   border: 20px solid green;
-  border-image: url("/images/snowflake.png") 1000 30 / 20px round space;
+  border-image: url("images/snowflake.png") 1000 30 / 20px round space;
   font-weight: bold;
   font-size: 1.4rem;
 }
@@ -81,7 +81,7 @@ h2 {
   font-weight: bold;
   color: white;
   padding: 20px;
-  background-image: url("/images/snowflakes.png");
+  background-image: url("images/snowflakes.png");
   background-repeat: repeat;
   background-size: 300px;
   border: 20px double white;
@@ -106,7 +106,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: auto;
   background-color: rgb(205, 84, 84);
-  background-image: url("/images/snowflakes.png");
+  background-image: url("images/snowflakes.png");
   background-repeat: repeat;
   background-size: 300px;
   border-radius: 10px;
@@ -120,7 +120,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: auto;
   background-color: rgb(42, 113, 190);
-  background-image: url("/images/snowflakes.png");
+  background-image: url("images/snowflakes.png");
   background-repeat: repeat;
   background-size: 300px;
   border-radius: 10px;
@@ -135,7 +135,7 @@ h2 {
   height: 350px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr;
-  background-image: url("/images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
+  background-image: url("images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
   background-size: cover;
   border-radius: 20px;  
   padding: 20px; 
@@ -188,7 +188,7 @@ h2 {
   grid-row: 2 / span 2;
   text-align: center;
   align-self:flex-end;
-  background-image: url("/images/snowflakes_white.png");
+  background-image: url("images/snowflakes_white.png");
   background-repeat: repeat;
   background-size: 200px;
   background-color: rgb(205, 84, 84);
@@ -215,7 +215,7 @@ h2 {
   height: 350px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr;
-  background-image: url("/images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
+  background-image: url("images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
   background-size: cover;
   border-radius: 20px;  
   padding: 20px; 
@@ -268,7 +268,7 @@ h2 {
   grid-row: 2 / span 2;
   text-align: center;
   align-self:flex-end;
-  background-image: url("/images/snowflakes_white.png");
+  background-image: url("images/snowflakes_white.png");
   background-repeat: repeat;
   background-size: 200px;
   background-color: rgb(42, 113, 190);
@@ -300,7 +300,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: auto;
   background-color: gold;
-  background-image: url("/images/snowflakes.png");
+  background-image: url("images/snowflakes.png");
   background-repeat: repeat;
   background-size: 300px;
   border-radius: 10px;
@@ -315,7 +315,7 @@ h2 {
   height: 350px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr;
-  background-image: url("/images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
+  background-image: url("images/background_snow.png"), linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(107, 206, 209, 1) 73%);
   background-size: cover;
   border-radius: 20px;  
   padding: 20px; 
@@ -368,7 +368,7 @@ h2 {
   grid-row: 2 / span 2;
   text-align: center;
   align-self:flex-end;
-  background-image: url("/images/snowflakes_white.png");
+  background-image: url("images/snowflakes_white.png");
   background-repeat: repeat;
   background-size: 200px;
   background-color: black;
@@ -415,7 +415,7 @@ footer::before{
   bottom: 0;        /* just in case */
   width: 100%;      /* or whatever width you want */
   height: 240px;     /* set the height of the snow layer */
-  background-image: url("/images/snow_ground.png");
+  background-image: url("images/snow_ground.png");
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none; 
